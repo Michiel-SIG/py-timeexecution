@@ -88,7 +88,6 @@ def create_module_file(package, module, opts):
         text = format_heading(1, '%s module' % module)
     else:
         text = ''
-    # text += format_heading(2, ':mod:`%s` Module' % module)
     text += format_directive(module, package)
     write_file(makename(package, module), text, opts)
 
